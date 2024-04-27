@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000;
+        }
+        
+        p{
+            color: aliceblue;
+            background-color: #000;
+            padding: 15px;
+        }
+        h2{
+            color: #de9733;
+        }
+        .slider{
+            position: relative;
+            width: 60%;
+            overflow: hidden;
+        }
+
+        .tousimg{
+            display: flex;
+            width: 50%;
+        
+        }
+        .tousimg .main{
+            height: 900px;
+            width: 500px;
+           
+            transition: all 0.10s ease;
+            
+        }
+        
+        .tousimg input{
+            display: none;
+        }
+        .point{
+            display: flex;
+           justify-content: center;
+           margin: 5px;
+        }
+        .point label{
+            height: 20PX;
+            width: 20PX;
+            border-radius: 50%;
+            border: solid white 3px;
+            cursor: pointer;
+            transition: all 0.10s ease;
+            margin: 5px;
+        }
+        .point label:hover{background-color: antiquewhite;}
+
+        #ra1:checked~ #m1{
+            margin-left: 0%;
+        }
+        #ra2:checked~ #m2{
+            margin-left: -100%;
+        }
+        #ra3:checked~ #m3{
+            margin-left: -200%;
+        }
+        
+    </style>
+</head>
+<body>
+   
+
+        
+
+   <div class="slider">
+        <div class="tousimg">
+            <input type="radio" name="slide" id="ra1" checked>
+            <input type="radio" name="slide" id="ra2">
+            <input type="radio" name="slide" id="ra3">
+
+            
+
+            <div class="main" id="m1">
+                <div class="soumain3">
+                    <img src="icon_1.png" alt="">
+                    <center>
+                    <img src="clients.png" alt="">
+                   </center>
+                </div>
+                <h2>management tem</h2>
+                <br>
+                <p> it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                </p>
+            </div>
+
+
+            <div class="main" id="m2">
+                <div class="soumain3">
+                    <img src="icon_1.png" alt="">
+                    <center>
+                    <img src="clients.png" alt="">
+                   </center>
+                </div>
+                <h2>management tem</h2>
+                <br>
+                <p> it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                </p>
+            </div>
+
+
+
+            <div class="main" id="m3">
+                <div class="soumain3">
+                    <img src="icon_1.png" alt="">
+                    <center>
+                    <img src="clients.png" alt="">
+                   </center>
+                </div>
+                <h2>management tem</h2>
+                <br>
+                <p> it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="point">
+            <label for="ra1"></label>
+            <label for="ra2"></label>
+            <label for="ra3"></label>
+        </div>
+   </div>
+
+    
+</body>
+</html>
